@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Jay Mane - MCA student and web developer.">
+  <title>Jay Mane | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">Jay<span>.</span></a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hello">Hello, I'm</p>
+      <h1>Jay Mane</h1>
+      <h2>I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+      <p class="lead">I build clean, useful software and websites, from AI-powered apps to responsive web pages.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">View my work</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2 class="title">About Me</h2>
+      <div class="about-grid">
+        <div class="avatar" aria-hidden="true">JM</div>
+        <div>
+          <p>I'm an MCA student who enjoys turning ideas into working software. I like building practical tools, exploring Generative AI, and creating websites that look good on every screen.</p>
+          <p>This portfolio showcases my profile, technical skills, and the projects I have built, and is a place for recruiters, developers and collaborators to get in touch.</p>
+          <ul class="facts">
+            <li><strong>Education:</strong> MCA (Master of Computer Applications)</li>
+            <li><strong>Interests:</strong> Web development, Python, Generative AI</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Jay208mane" target="_blank" rel="noopener">Jay208mane</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2 class="title">Technical Skills</h2>
+      <div class="skills">
+        <div class="skill"><span>HTML5</span><div class="bar"><i data-level="90"></i></div></div>
+        <div class="skill"><span>CSS3 / Responsive Design</span><div class="bar"><i data-level="85"></i></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><i data-level="75"></i></div></div>
+        <div class="skill"><span>Python</span><div class="bar"><i data-level="85"></i></div></div>
+        <div class="skill"><span>Streamlit / tkinter</span><div class="bar"><i data-level="80"></i></div></div>
+        <div class="skill"><span>Git &amp; GitHub</span><div class="bar"><i data-level="80"></i></div></div>
+        <div class="skill"><span>Generative AI / APIs</span><div class="bar"><i data-level="70"></i></div></div>
+        <div class="skill"><span>SQL / Databases</span><div class="bar"><i data-level="70"></i></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2 class="title">Projects</h2>
+      <div class="filters">
+        <button class="chip active" data-f="all">All</button>
+        <button class="chip" data-f="ai">AI</button>
+        <button class="chip" data-f="web">Web</button>
+        <button class="chip" data-f="tool">Tools</button>
+      </div>
+      <div class="cards">
+        <article class="card" data-cat="ai">
+          <h3>🐾 Mochi Pet</h3>
+          <p>AI-powered virtual desktop pet with animated expressions, needs and Generative AI conversations.</p>
+          <div class="tags"><span>Python</span><span>tkinter</span><span>GenAI</span></div>
+          <a href="https://github.com/Jay208mane/mochi_pet" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card" data-cat="tool">
+          <h3>📚 Study Planner</h3>
+          <p>Organizes study sessions and academic tasks, with deadlines, progress tracking and a focus timer.</p>
+          <div class="tags"><span>Python</span><span>Streamlit</span></div>
+          <a href="https://github.com/Jay208mane/study-planner" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card" data-cat="ai">
+          <h3>🎓 Student Virtual Assistant</h3>
+          <p>AI-powered assistant that helps students with questions and study support.</p>
+          <div class="tags"><span>Python</span><span>Streamlit</span><span>GenAI</span></div>
+          <a href="https://github.com/Jay208mane" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card" data-cat="web">
+          <h3>🌐 Portfolio Website</h3>
+          <p>This responsive personal website with dark mode, animations and a contact form.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://github.com/Jay208mane/portfoli_Demo" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="reveal">
+      <h2 class="title">Web Development Journey</h2>
+      <ol class="timeline">
+        <li><strong>Foundations</strong><p>Learned HTML, CSS and JavaScript and built first static pages.</p></li>
+        <li><strong>Python &amp; Apps</strong><p>Built desktop and data apps with Python, tkinter and Streamlit.</p></li>
+        <li><strong>Generative AI</strong><p>Integrated AI APIs to create intelligent assistants and companions.</p></li>
+        <li><strong>Professional presence</strong><p>Published projects on GitHub and created this portfolio.</p></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2 class="title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Interested in working together or have a question? Send a message and it will open in your email app.</p>
+          <ul class="facts">
+            <li>📧 <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            <li>💻 <a href="https://github.com/Jay208mane" target="_blank" rel="noopener">github.com/Jay208mane</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        <form id="contactForm" novalidate>
+          <input id="name" placeholder="Your name" required>
+          <input id="email" type="email" placeholder="Your email" required>
+          <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+          <p id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Jay Mane · Built with HTML, CSS &amp; JavaScript</footer>
+  <button id="topBtn" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
